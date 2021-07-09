@@ -26,7 +26,7 @@ SECRET_KEY = '#des6k!(mf^b30huc$zas*c$!sm-3gnv36tgdt+dpp%si*!z+b'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = ['localhost','http://engproject-4sem.std-960.ist.mospolytech.ru/','engproject-4sem.std-960.ist.mospolytech.ru']
 
 
 IMPORT_EXPORT_USE_TRANSACTIONS = True
