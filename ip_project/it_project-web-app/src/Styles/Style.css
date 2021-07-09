@@ -1,0 +1,378 @@
+* {
+  padding: 0;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #ddfddd;
+}
+
+body .mainPage {
+  color: rgb(14, 69, 11);
+  text-align: center;
+}
+
+body .admin {
+	width: 80%;
+	margin: auto;
+}
+
+body .admin .table__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+  /* -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; */
+  color: rgb(9, 100, 56);
+}
+
+body .admin .table__description .admin__button {
+  border: 2px solid #00bb4b;
+  border-radius: 10px;
+	padding: 5px;
+  background-color: rgba(94, 228, 163, 0);
+  color: rgb(9, 100, 56);
+  cursor: pointer;
+  -webkit-transition: .4s;
+  transition: .4s;
+  text-decoration: none;
+  font-size: 1rem;
+	margin-left: 20px;
+}
+
+body .admin .table__description .admin__button:hover {
+  background-color: #92ff8d;
+  border: 2px solid #04df54;
+  color: #0a4720;
+}
+
+body .admin .table {
+  text-align: center;
+  border-collapse: collapse;
+  background: #1b6246;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(2, 98, 5, 0.5);
+}
+
+body .admin .table .table__head {
+  font-size: 1rem;
+  color: white;
+}
+
+body .admin .table .table__head th {
+  border-bottom: 3px solid rgba(110, 221, 80, 0.3);
+}
+
+body .admin .table .table__head th:first-child {
+  padding: 10px;
+}
+
+body .admin .table .table__body {
+  font-size: 0.8rem;
+  color: #ffffff;
+}
+
+body .admin .table .table__body td {
+  padding: 20px;
+  border-bottom: 2px solid #015803;
+}
+
+body .admin .table .table__body td:first-child {
+	padding: 15px;
+}
+
+body .admin .table .table__delete {
+  border: 2px solid #da4646;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: #fd535384;
+  color: #ffffff;
+  cursor: pointer;
+  -webkit-transition: .4s;
+  transition: .4s;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+body .admin .table .table__delete:hover {
+  background-color: #ff0000;
+  border: 2px solid #DB1B1B;
+  color: white;
+}
+
+body .admin .table .table__update {
+  border: 2px solid #a1f5b3;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: #00ca2c6a;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: .4s;
+  transition: .4s;
+  text-decoration: none;
+}
+
+body .admin .table .table__update:hover {
+  background-color: #92ff8d;
+	color: #004429;
+  border: 2px solid #00CA2C;
+}
+
+body .header {
+	border: #004429 solid 1px;
+	border-radius: 8px;
+	width: 80%;
+	margin: 10px auto;
+	background-color: #aaffa5;
+	box-shadow: 0 0 10px rgba(2, 98, 5, 0.5);
+}
+
+body .header .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #aaffa5;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+			border-radius: 8px;
+  padding: 10px;
+}
+
+body .header .navbar .navbar__brand {
+  font-size: 2rem;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #193e2c;
+  text-decoration: none;
+}
+
+body .header .navbar .navbar__ul {
+  list-style-type: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+					margin: auto;
+}
+
+/* body .header .navbar .navbar__ul .navbar__item {
+  /* padding-left: 13px;
+} */
+
+body .header .navbar .navbar__ul .navbar__item .navbar__link {
+  font-size: 1rem;
+  text-decoration: none;
+  -webkit-transition: 3s;
+  transition: 3s;
+  color: #193e2c;
+	padding: 15px;
+	border-radius: 30px;
+}
+
+body .header .navbar .navbar__ul .navbar__item .navbar__link:hover {
+	background-image: radial-gradient( rgba(89, 162, 85, 0.53), rgba(143, 251, 150, 0.013));
+	background-size: auto;
+}
+
+body .loginForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+	-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+					justify-content: center;
+ 	-webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: rgb(3, 84, 5);
+  /* height: 90vh; */
+	width: 70%;
+	margin: auto;
+}
+
+body .loginForm .loginForm__title {
+  font-size: 2.5rem;
+  color: rgb(0, 98, 7);
+}
+
+body .loginForm .loginForm__div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* margin-top: 12px; */
+  margin-bottom: 12px;
+}
+
+body .loginForm .loginForm__div .loginForm__label {
+  /* margin-bottom: 12px; */
+  font-size: 1rem;
+}
+
+body .loginForm .loginForm__div .loginForm__input {
+  border: 1px solid #036730;
+  border-radius: 10px;
+  padding: 7px 10px;
+  font-size: 1rem;
+  background-color: #eff5f1;
+  width: 100%;
+}
+
+body .loginForm .loginForm__button {
+  margin-top: 12px;
+  border: 1px solid #47ff7b;
+  border-radius: 10px;
+  background-color: #18851f;
+  padding: 10px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  -webkit-transition: .55s;
+  transition: .55s;
+  /* font-weight: 500; */
+  width: 100%;
+}
+
+body .loginForm .loginForm__button:hover {
+  background-color: rgb(179, 250, 181);
+  border: 1px solid #089318;
+	color: rgb(1, 93, 15);
+}
+
+body .createUpdateForm {
+  color: rgb(25, 108, 13);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+	margin: auto;
+	width: 60%;
+	padding-bottom: 20px;
+}
+
+body .createUpdateForm .createUpdateForm__title {
+  font-size: 1rem;
+}
+
+body .createUpdateForm .createUpdateForm__label {
+  font-size: 1rem;
+}
+
+body .createUpdateForm .createUpdateForm__input,
+body .createUpdateForm .createUpdateForm__select {
+  border: 1px solid #0ca904;
+  border-radius: 10px;
+  padding: 7px 10px;
+  font-size: 1rem;
+  background-color: rgb(211, 248, 224);
+  color: #224421;
+}
+
+body .createUpdateForm .createUpdateForm__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .createUpdateForm .createUpdateForm__buttons .createUpdateForm__button {
+  font-size: 22px;
+  margin-top: 12px;
+  border: 1px solid #9dec91;
+  border-radius: 10px;
+  padding: 7px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  -webkit-transition: .55s;
+  transition: .55s;
+  font-weight: 500;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+}
+
+body .createUpdateForm .createUpdateForm__buttons .button__save {
+  color: black;
+  background-color: #53F96D;
+  margin-right: 10px;
+}
+
+body .createUpdateForm .createUpdateForm__buttons .button__save:hover {
+  color: #174e1f;
+  border-color: #065812;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+body .createUpdateForm .createUpdateForm__buttons .button__back {
+  margin-left: 10px;
+  color: #01451a;
+  background-color: #ccf758;
+}
+
+body .createUpdateForm .createUpdateForm__buttons .button__back:hover {
+  color: #174e1f;
+  border-color: #065812;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+body .apiTest {
+	width: 80%;
+  margin: auto;
+  color: rgb(6, 96, 34);
+	border-radius: 10px;
+	border: #004429 1px solid;
+	padding-left: 5px;
+	box-shadow: 0 0 10px rgba(2, 98, 5, 0.5);
+}
+
+body .apiTest .apiTest__title {
+  font-size: 1.5rem;
+}
+
+body .apiTest .apiTest__list {
+  list-style-type: none;
+}
+
+body .apiTest .apiTest__list .apiTest__item {
+  font-size: 1rem;
+  margin-top: 30px;
+}
+
+@media print {
+
+  p {
+    color: rgb(0, 0, 0);
+    background-color: #fff;
+		font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		font-size: 2rem;
+  }
+
+	.header {
+		display: none;
+	}
+
+}
+/*# sourceMappingURL=Style.css.map */
