@@ -9,7 +9,7 @@ class Login extends React.Component {
         username: '',
         password: '',
       },
-      url: 'http://localhost:8000/',
+      url: 'http://react-4-sem.std-960.ist.mospolytech.ru/',
       data: {},
       users: [],
       token: null,

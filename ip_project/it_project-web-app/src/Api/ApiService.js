@@ -36,11 +36,11 @@ export default class ApiService extends React.Component {
 		})
 	}
 
-	async createData(student, link) {
+	async createData(data, link) {
 		let url = URL + `/${link}/`;
 		return fetch(url, {
 				method: 'POST',
-				body: JSON.stringify(student),
+				body: JSON.stringify(data),
 				headers: {
 					'Content-type': 'application/json',
 					'Authorization': `Token ${localStorage.token}`,
@@ -51,11 +51,11 @@ export default class ApiService extends React.Component {
 			})
 	}
 
-	async updateData(student, link) {
-		let url = URL + `/${link}/${student.id}`
+	async updateData(data, link) {
+		let url = URL + `/${link}/${data.id}`
 		return fetch(url, {
 				method: 'PUT',
-				body: JSON.stringify(student),
+				body: JSON.stringify(data),
 				headers: {
 					'Content-type': 'application/json',
 					'Authorization': `Token ${localStorage.token}`,
